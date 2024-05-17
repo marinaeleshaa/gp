@@ -1,0 +1,69 @@
+:root{
+  --myblue : #033373;
+  --mylight : #17b8da;
+  --mywhite : white ;
+  --transition :0.3s ease-in-out;;
+
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 1000px;
+}
+
+.navbar {
+  background-color: var(--mywhite);
+}
+
+
+.navbar .navbar-nav .nav-link{
+  color: var(--myblue);
+  font-size: 20px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+  color: var(--mylight);
+  font-size: 25px;
+}
+
+.navbar .navbar-toggler{
+  color: var(--myblue);
+  font-size: 40px;
+  border: var(--myblue);
+}
+
+.main-btn {
+  background-color: var(--myblue);
+  padding: 10px;
+  color: var(--mywhite);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-left: 10px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  font-weight: bold;
+}
+
+.btn:hover{
+  color: var(--mywhite);
+  background-color: var(--mylight);
+  font-size: 20px;
+}
