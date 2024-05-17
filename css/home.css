@@ -1,26 +1,28 @@
-:root{
-  --myblue : #033373;
-  --mylight : #17b8da;
-  --mywhite : white ;
-  --transition :0.3s ease-in-out;;
-
+:root {
+  --myblue: #033373;
+  --mylight: #17b8da;
+  --mywhite: white;
+  --transition: 0.3s ease-in-out;
+  --animation: left_right 2s ease-in-out;
 }
 
-*{
+* {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   height: 1000px;
+  position: relative;
 }
-
+/* start navbar style */
 .navbar {
   background-color: var(--mywhite);
 }
 
-
-.navbar .navbar-nav .nav-link{
+.navbar .navbar-nav .nav-link {
   color: var(--myblue);
   font-size: 20px;
   transition: var(--transition);
@@ -33,12 +35,12 @@ body {
 
 .navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .nav-link:focus,
-.navbar .navbar-nav .nav-link:hover{
+.navbar .navbar-nav .nav-link:hover {
   color: var(--mylight);
   font-size: 25px;
 }
 
-.navbar .navbar-toggler{
+.navbar .navbar-toggler {
   color: var(--myblue);
   font-size: 40px;
   border: var(--myblue);
@@ -62,8 +64,159 @@ body {
   font-weight: bold;
 }
 
-.btn:hover{
+.btn:hover {
   color: var(--mywhite);
   background-color: var(--mylight);
   font-size: 20px;
+  cursor: pointer;
+}
+
+/* end navbar style */
+
+/* start login form style */
+
+/* .login-popup {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.25);
+  background-color: var(--mywhite);
+  width: auto;
+  padding: 20px 30px;
+  box-shadow: 2px 2px 5px 5px var(--myblue);
+  border-radius: 10px;
+  transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+.login-popup.active {
+  display: block;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.login-popup .login-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 40px;
+  color: var(--myblue);
+  cursor: pointer;
+}
+
+.login-popup .login_form h2 {
+  text-align: center;
+  color: var(--myblue);
+  margin: 10px 0px 20px;
+}
+
+.login-popup .login_form .login-form-element {
+  margin: 15px 0px;
+}
+
+.login-popup .login_form .login-form-element label {
+  font-size: 30px;
+  color: var(--myblue);
+}
+
+.login-popup .login_form .login-form-element input[type="text"],
+.login-popup .login_form .login-form-element input[type="password"] {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid var(--myblue);
+  border-radius: 10px;
+}
+
+.login-popup .login_form .login-form-element input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.login-form-element .main-btn {
+  width: 100%;
+}
+
+.login-popup .login_form .login-form-element a {
+  display: block;
+  text-align: left;
+  font-size: 15px;
+  color: var(--myblue);
+  text-decoration: none;
+  font-weight: bold;
+} */
+
+.modal-body .main-btn {
+  width: 100%;
+}
+
+
+.modal-content {
+  color: var(--myblue);
+}
+
+.log-option .main-btn {
+  background-color: var(--myblue);
+  padding: 10px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* the fixed top section */
+
+.landing {
+  height: 350px; /* Full viewport height */
+}
+.landing img {
+  width: 100%;
+  height: inherit;
+}
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--myblue); /* Semi-transparent overlay */
+}
+.overlay h3 {
+  color: var(--mywhite);
+  font-size: 40px;
+  animation: var(--animation);
+  -webkit-animation: var(--animation);
+}
+
+@keyframes left_right {
+  from {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+    -moz-transform: translateX(-200%);
+    -ms-transform: translateX(-200%);
+    -o-transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+  }
 }

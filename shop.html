@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lens Look</title>
+    <title>Appointment</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/shop.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -51,9 +52,7 @@
               <a class="nav-link p-2 p-lg-3" href="shop.html">Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-2 p-lg-3" href="appointment.html"
-                >Appointment</a
-              >
+              <a class="nav-link p-2 p-lg-3" href="appointment.html">Appointment</a>
             </li>
             <li class="nav-item dropdown p-2 p-lg-2">
               <a
@@ -67,72 +66,36 @@
                 pages
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="our doctors.html"
-                    >Our Doctors</a
-                  >
-                </li>
+                <li><a class="dropdown-item" href="our doctors.html">Our Doctors</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="reviews.html">Reviews</a>
-                </li>
+                <li><a class="dropdown-item" href="reviews.html">Reviews</a></li>
               </ul>
             </li>
           </ul>
-          <button class="btn main-btn" id="show-login" data-bs-toggle="modal"
-          data-bs-target="#loginPopup">Login</button>
-          <button class="btn main-btn">Sign Up</button>
+          <a class="btn main-btn" href="">Log In</a>
+          <a class="btn main-btn" href="">Sign Up</a>
         </div>
       </div>
     </nav>
 
-    <div class="modal fade " id="loginPopup" tabindex="-1" aria-labelledby="loginPopupLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header  ">
-            <h3 class="modal-title " id="loginPopupLabel">Login</h3>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            
-            <form class="login_form ">
-              <div class="mb-3">
-                <label for="username" class="form-label fw-bold">Username</label>
-                <input type="text" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter your username">
-              </div>
-              <div class="mb-3">
-                <label for="password" class="form-label fw-bold">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Enter your password">
-              </div>
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="rememberMe">
-                <label class="form-check-label" for="rememberMe">Remember Me</label>
-              </div>
-              <button type="submit" class="btn main-btn ms-0 mb-3">Login</button>
-              <a href="#" >Forgot Password?</a>
-              <hr>
-              <p class="text-center fw-bold">OR</p>
-              <hr >
-              <div class="text-center log-option mb-3 ">
-                <a href="#" class="btn  main-btn btn-sm me-2 ms-0">
-                  <i class="fab fa-facebook-f me-3"></i> Login with Facebook
-                </a>
-                <a href="#" class="btn btn-light btn-sm main-btn ms-0">
-                  <i class="fab fa-google me-3"></i> Login with Google
-                </a>
-              </div>
-            </form>
-          </div>
-        </div>
+    <section
+      class="landing container-fluid p-0 d-grid position-relative align-items-center"
+    >
+      <img
+        src="photos/about_us.jpg"
+        alt="About us"
+        class="img-fluid position-absolute"
+      />
+      <div
+        class="overlay display-flex align-items-center justify-content-center opacity-50"
+      >
+        <h3>Shop</h3>
       </div>
-    </div>
-
-    
+    </section>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
-    <script src="js/home.js"></script>
   </body>
 </html>
