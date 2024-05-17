@@ -75,74 +75,6 @@ body {
 
 /* start login form style */
 
-/* .login-popup {
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(1.25);
-  background-color: var(--mywhite);
-  width: auto;
-  padding: 20px 30px;
-  box-shadow: 2px 2px 5px 5px var(--myblue);
-  border-radius: 10px;
-  transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
-}
-
-.login-popup.active {
-  display: block;
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.login-popup .login-close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 40px;
-  color: var(--myblue);
-  cursor: pointer;
-}
-
-.login-popup .login_form h2 {
-  text-align: center;
-  color: var(--myblue);
-  margin: 10px 0px 20px;
-}
-
-.login-popup .login_form .login-form-element {
-  margin: 15px 0px;
-}
-
-.login-popup .login_form .login-form-element label {
-  font-size: 30px;
-  color: var(--myblue);
-}
-
-.login-popup .login_form .login-form-element input[type="text"],
-.login-popup .login_form .login-form-element input[type="password"] {
-  margin-top: 5px;
-  display: block;
-  width: 100%;
-  padding: 10px;
-  outline: none;
-  border: 1px solid var(--myblue);
-  border-radius: 10px;
-}
-
-.login-popup .login_form .login-form-element input[type="checkbox"] {
-  margin-right: 5px;
-}
-
-.login-form-element .main-btn {
-  width: 100%;
-}
-
-.login-popup .login_form .login-form-element a {
-  display: block;
-  text-align: left;
-  font-size: 15px;
-  color: var(--myblue);
-  text-decoration: none;
-  font-weight: bold;
-} */
 
 .modal-body .main-btn {
   width: 100%;
@@ -220,3 +152,43 @@ body {
     -o-transform: translateX(0%);
   }
 }
+
+
+
+/* footer */
+.footer {
+  margin-top: 100px;
+  background-color: var(--myblue);
+  color: var(--mywhite);
+  padding: 50px 0;
+  margin-bottom: 0px;
+  
+}
+
+
+.footer .col {
+  flex: 1;
+}
+.footer .col h4 {
+  color: var(--mylight);
+}
+
+.footer .col a {
+  color: var(--mywhite);
+  text-decoration: none; /* Remove underline decoration */
+  transition: var(--transition);
+  font-size: 20px;
+}
+
+.footer .col a:hover {
+  color: var(--mylight);
+  font-size: 24px;
+}
+
+
+.footer .col h4 {
+  margin-bottom: 15px; /* Add some space below headers*/
+
+  .copyright{
+    color: var(--mylight) !important ;
+  }
