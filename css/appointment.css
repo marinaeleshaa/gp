@@ -211,3 +211,28 @@
   color: var(--mylight);
   margin: 30px 70px;
 }
+
+.card-body .main-btn {
+  background-color: var(--mylight);
+  padding: 10px;
+  color: var(--mywhite);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-left: 10px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  font-weight: bold;
+}
+
+.main-btn:hover {
+  color: var(--mywhite);
+  background-color: var(--myblue);
+  font-size: 20px;
+  cursor: pointer;
+}
