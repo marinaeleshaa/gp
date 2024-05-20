@@ -92,24 +92,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* the fixed top section */
 
 .landing {
@@ -187,7 +169,8 @@ body {
 
 
 .footer .col h4 {
-  margin-bottom: 15px; /* Add some space below headers*/
+  margin-bottom: 15px; 
+}
 
   .copyright{
     color: var(--mylight) !important ;
