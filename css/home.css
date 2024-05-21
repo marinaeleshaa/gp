@@ -14,9 +14,9 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  height: 1000px;
   position: relative;
 }
+
 /* start navbar style */
 .navbar {
   background-color: var(--mywhite);
@@ -176,4 +176,11 @@ body {
 
   .copyright{
     color: var(--mylight) !important ;
+  }
+
+
+  /* form */
+
+  .log-option a{
+    margin-bottom: 10px;
   }

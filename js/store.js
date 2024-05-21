@@ -9,3 +9,9 @@ stars.forEach(star => {
 });
 
 console.log(typeof(stars));
+
+
+
+
+
+
